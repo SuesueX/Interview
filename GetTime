@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport"
+        content="width=device-width,initial-scale=1.0">
+
+        <title>GetTime2401</title>
+
+        <style>
+          #time {
+            font-Size: 175px;
+            width: 900px;
+            margin: 200px;
+            text-align: center;
+            border: 2px solid black;
+            border-radius: 20px;
+          }
+        </style>
+    </head>
+        <body>
+
+        <div id="time">h:m:s</div>
+
+        <script type="text/javascript">
+
+          var now = new Date();
+
+          var h = now.getHours();
+          var m = now.getMinutes();
+          var s = now.getSeconds();
+
+          document.getElementById('time').innerText = h + ":" + m + ":" + s;
+        </script>
+        </body>
+</html>
